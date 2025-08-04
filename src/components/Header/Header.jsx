@@ -64,7 +64,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-              
+
             </ul>
           </div>
         </div>
