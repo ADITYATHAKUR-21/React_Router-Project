@@ -18,11 +18,22 @@ const Github = () => {
   // }, [])
   return (
     <>
-      <div className=' flex bg-gray-400 text-white text-center text-3xl p-4'>
-        Name: {data.name}
-        Github followers: {data.followers}
+      <div className=' flex  gap-5 bg-gray-500 text-white text-center text-2xl p-2'>
+        <div>
+           <img src={data.avatar_url} alt="" className='rounded-3xl shadow-2xl' />
+        </div>
+
+        <div>
+           <h1 className=' font-medium'>Name : {data.name}</h1>
+           <h1 className=' font-medium'>Followers : {data.followers} </h1>
+           <h1 className=' font-medium'>Following: {data.following} </h1>
+
+
+
+        </div>
+
       </div>
-      <img src={data.avatar_url} alt="" />
+
     </>
   )
 }
